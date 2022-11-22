@@ -1,0 +1,29 @@
+.subscribers {
+  padding: 120px 0;
+  background-color: #f8f9fc;
+
+  h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .subscribers {
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribers {
+    padding: 70px 0;
+  }
+}
