@@ -1285,6 +1285,29 @@ button,
   color: #103aae;
   margin-bottom: 59px;
   position: relative;
+  z-index: 2;
+}
+
+.tub-list b::before {
+  content: "";
+  width: 30px;
+  height: 42px;
+  position: absolute;
+  right: -40px;
+  top: 9px;
+  background-image: url("../img/svg/rur.svg");
+}
+
+.tub-list b .tub-list__shadow {
+  position: absolute;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  left: -25px;
+  top: 35px;
+  color: transparent;
+  z-index: -1;
+  text-shadow: 0 -40px 0 rgba(232, 232, 232, 0.4);
 }
 
 .tub-list.tub-list--active {
@@ -1779,6 +1802,24 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .tub-list b {
+    font-size: 48px;
+    line-height: 150%;
+  }
+
+  .tub-list b::before {
+    width: 24px;
+    height: 33px;
+    background-size: 24px 33px;
+    top: 19px;
+    right: -32px;
+  }
+
+  .tub-list b .tub-list__shadow {
+    font-size: 80px;
+    left: -18px;
   }
 
   .tub-list__item {
