@@ -388,7 +388,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
+  src: url("../fonts/alumni-sans-bold.woff2") format("woff2"), url("../fonts/alumni-sans-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -396,7 +396,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
+  src: url("../fonts/alumni-sans-extra-bold.woff2") format("woff2"), url("../fonts/alumni-sans-extra-bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -784,6 +784,20 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.main-header {
+  background-image: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+}
+
+.logo {
+  font-family: "Alumni-Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 /* @mixin hover-focus {
