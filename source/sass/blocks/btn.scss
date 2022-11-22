@@ -1,6 +1,8 @@
 .btn {
   display: inline-flex;
   padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
 
   color: $color-default-white;
 
@@ -22,5 +24,24 @@
 
   @include hover-focus {
     opacity: 0.8;
+  }
+}
+
+.btn--main-screen {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 4px solid #ffffff;
+  width: 230px;
+  min-height: 57px;
+
+  @media (max-width: 1199px) {
+    width: 183px;
   }
 }
