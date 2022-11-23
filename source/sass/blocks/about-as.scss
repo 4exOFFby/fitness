@@ -38,7 +38,8 @@
 
   img {
     width: 50vw;
-    height: 30vw;
+    height: 401px;
+    object-position: center;
     object-fit: cover;
   }
 }
@@ -56,7 +57,7 @@
 .about-as__image-wrapper {
   position: relative;
   width: 50vw;
-  height: 30vw;
+  height: 401px;
   z-index: 0;
 
   iframe {
@@ -131,20 +132,6 @@
 .about-as__play-button:hover::before {
   opacity: 0.9;
 }
-
-// .about-as__video-wrapper:hover {
-//   cursor: pointer;
-
-//   iframe {
-//     position: relative;
-//     z-index: 100;
-//     cursor: pointer;
-//   }
-
-//   .about-as__play-button {
-//     display: none;
-//   }
-// }
 
 @media (max-width: 1199px) {
   .about-as__container {
