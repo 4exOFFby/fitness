@@ -1,6 +1,7 @@
 .subscribers {
   padding: 120px 0;
   background-color: #f8f9fc;
+  position: relative;
 
   h2 {
     font-family: "Alumni Sans", "Arial", sans-serif;
@@ -16,6 +17,18 @@
   }
 }
 
+.subscribers::before {
+  content: "";
+  position: absolute;
+  width: 286px;
+  height: 384px;
+  bottom: -54px;
+  right: 0;
+  background-image: url("../img/png/subscription.png");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 @media (max-width: 1199px) {
   .subscribers {
     padding: 100px 0;
@@ -25,5 +38,9 @@
 @media (max-width: 767px) {
   .subscribers {
     padding: 70px 0;
+  }
+
+  .subscribers::before {
+    display: none;
   }
 }
