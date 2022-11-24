@@ -79,6 +79,11 @@
 @media (max-width: 767px) {
   .stocks {
     padding: 70px 0 70px 0;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 
   .stocks__list {
@@ -92,6 +97,9 @@
 
     p {
       text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      width: 90%;
     }
   }
 }

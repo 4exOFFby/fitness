@@ -1,0 +1,124 @@
+.feedback-carousel {
+  position: relative;
+
+  .feedback-carousel__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+
+  .feedback-carousel__button {
+    position: absolute;
+    top: 43%;
+    background-color: transparent;
+    border: none;
+  }
+
+  .feedback-carousel__button--prev {
+    left: -66px;
+  }
+
+  .feedback-carousel__button--next {
+    right: -66px;
+    transform: rotate(180deg);
+  }
+}
+
+.feedback-carousel__item {
+  width: 100%;
+  background: #1c3374;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  padding: 62px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 28px;
+
+  img {
+    border-radius: 50%;
+    grid-row: 1/3;
+  }
+
+  blockquote {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    grid-column: 2/3;
+  }
+
+  cite {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 1199px) {
+  .feedback-carousel {
+    .feedback-carousel__button {
+      padding: 0;
+    }
+
+    .feedback-carousel__button--prev {
+      left: -34px;
+    }
+
+    .feedback-carousel__button--next {
+      right: -34px;
+    }
+
+    .feedback-carousel__list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .feedback-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .feedback-carousel__button--prev {
+      left: 0;
+    }
+
+    .feedback-carousel__button--next {
+      right: 0;
+    }
+
+    .feedback-carousel__list {
+      width: 80%;
+    }
+
+    .feedback-carousel__item {
+      padding: 40px 25px;
+      column-gap: 15px;
+      row-gap: 16px;
+
+      cite {
+        text-align: start;
+        padding-top: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        width: min-content;
+      }
+
+      blockquote {
+        grid-column: 1/3;
+        text-align: center;
+      }
+    }
+  }
+}
