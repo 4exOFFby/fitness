@@ -52,6 +52,7 @@
 @media (min-width: 1200px) {
   .contacts {
     grid-column: 2/3;
+    border-top: 1px solid #74819c;
 
     .contacts__container {
       max-width: 580px;
@@ -105,5 +106,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .contacts__item--other-order,
+  .contacts__item--last-order {
+    order: 1;
   }
 }
