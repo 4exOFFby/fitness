@@ -1,0 +1,78 @@
+.free-lesson-form {
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #74819c;
+    padding: 10px 10px 10px 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  input::placeholder {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  input:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  button {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    width: 100%;
+    min-height: 52px;
+  }
+}
+
+.free-lesson-form__wrapper {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+  .free-lesson-form {
+    input {
+      width: 46.5%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .free-lesson-form {
+    input {
+      width: 100%;
+    }
+
+    input:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .free-lesson-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
