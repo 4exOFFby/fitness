@@ -29,6 +29,12 @@
   z-index: 1;
 }
 
+@media (min-width: 1200px) {
+  .subscribers {
+    grid-column: 1/3;
+  }
+}
+
 @media (max-width: 1199px) {
   .subscribers {
     padding: 100px 0;

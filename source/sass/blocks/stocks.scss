@@ -60,6 +60,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .stocks {
+    grid-column: 1/3;
+  }
+}
+
 @media (max-width: 1199px) {
   .stocks {
     padding: 100px 0 100px 0;

@@ -43,6 +43,13 @@
 @import "blocks/contacts";
 // ---------------------------------
 
+@media (min-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
 // ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах

@@ -18,6 +18,20 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .free-lesson {
+    grid-column: 1/2;
+
+    .free-lesson__container {
+      max-width: 84%;
+      width: 580px;
+      margin: 0;
+      margin-left: auto;
+      padding: 0 170px 0 0;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .free-lesson {
     padding: 70px 0;
