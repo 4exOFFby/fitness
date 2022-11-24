@@ -1,0 +1,38 @@
+.feedback {
+  padding-bottom: 121px;
+
+  h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: #102654;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 37px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .feedback {
+    padding-bottom: 100px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .feedback {
+    padding-bottom: 70px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+}
