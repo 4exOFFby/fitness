@@ -2428,6 +2428,7 @@ button,
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+    border-top: 1px solid #74819c;
   }
 
   .contacts .contacts__container {
@@ -2437,7 +2438,7 @@ button,
     padding-right: 0;
   }
 
-  main {
+  .grid-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -3567,6 +3568,10 @@ button,
     margin-right: 0;
   }
 
+  .free-lesson-form input:not(:first-of-type) {
+    margin-top: 30px;
+  }
+
   .free-lesson-form__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3601,6 +3606,13 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .contacts__item--other-order,
+  .contacts__item--last-order {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
 }
 

@@ -41,14 +41,8 @@
 @import "blocks/free-lesson";
 @import "blocks/free-lesson-form";
 @import "blocks/contacts";
+@import "blocks/grid-container";
 // ---------------------------------
-
-@media (min-width: 1200px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
