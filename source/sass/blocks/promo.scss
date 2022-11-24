@@ -96,6 +96,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .promo {
+    grid-column: 1/3;
+  }
+}
+
 @media (max-width: 1199px) {
   .promo {
     padding: 100px 0;

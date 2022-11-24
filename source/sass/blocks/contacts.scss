@@ -49,9 +49,18 @@
   }
 }
 
-// .contacts__item:nth-child(odd) {
-//   border-right: 1px solid #74819c;
-// }
+@media (min-width: 1200px) {
+  .contacts {
+    grid-column: 2/3;
+
+    .contacts__container {
+      max-width: 580px;
+      margin: 0;
+      margin-right: auto;
+      padding-right: 0;
+    }
+  }
+}
 
 
 @media (max-width: 1199px) {
