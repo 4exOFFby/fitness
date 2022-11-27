@@ -5,8 +5,8 @@
     font-family: "Alumni Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 54px;
+    line-height: 65px;
     letter-spacing: 0.03em;
     color: #102654;
     margin: 0;
@@ -15,40 +15,40 @@
 
   .trainers__container {
     padding: 0 103px;
+    position: relative;
+    z-index: 1;
   }
+}
+
+.trainers__slider {
+  position: initial;
+  width: 100%;
+  max-width: 1160px;
 }
 
 .trainers__slider-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 40px;
-  row-gap: 40px;
+  display: flex;
 }
 
-.trainers__slider-item {
-  align-self: center;
-}
-
-.trainers__slider {
-  position: relative;
-}
 
 .trainers__slider-button {
   position: absolute;
-  top: 45%;
+  top: 59%;
   background-color: transparent;
   border: none;
+  z-index: 5;
+  color: #afafaf;
 }
 
 .trainers__slider-button--prev {
-  left: -70px;
+  left: 35px;
 }
 
 .trainers__slider-button--next {
-  right: -70px;
+  right: 35px;
   transform: rotate(180deg);
 }
 
@@ -70,32 +70,34 @@
     }
 
     .trainers__container {
-      padding: 0 45px;
+      padding: 0 45px 0 45px;
     }
   }
 
   .trainers__slider {
-    display: flex;
-    justify-content: center;
+    width: 74vw;
+    height: 38.4vw;
   }
 
   .trainers__slider-list {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 30px;
+    height: 38.4vw;
   }
 
-  .trainers__slider-item {
-    align-self: center;
-  }
+  .trainers__slider-button {
+    top: 55%;
 
+    svg {
+      width: 16px;
+      height: 32px;
+    }
+  }
 
   .trainers__slider-button--prev {
-    left: 0;
+    left: 40px;
   }
 
   .trainers__slider-button--next {
-    right: 0;
+    right: 40px;
   }
 }
 
@@ -108,25 +110,34 @@
     }
 
     .trainers__container {
-      padding: 0 47px;
+      padding: 0 15px;
     }
   }
 
   .trainers__slider {
     display: flex;
-    justify-content: center;
+    width: 70.5vw;
+    height: 85.2vw;
   }
 
   .trainers__slider-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .trainers__slider-button {
+    svg {
+      width: 10px;
+      height: 19px;
+    }
   }
 
   .trainers__slider-button--prev {
-    left: -39px;
+    left: 12px;
   }
 
   .trainers__slider-button--next {
-    right: -39px;
+    right: 12px;
   }
 }
