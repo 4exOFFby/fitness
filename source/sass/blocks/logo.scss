@@ -1,24 +1,33 @@
 .logo {
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
-  letter-spacing: 0.02em;
+  width: 122px;
+  height: 44px;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo--footer {
+  width: 88px;
+  height: 32px;
 }
 
 @media (max-width: 1199px) {
   .logo {
-    font-size: 24px;
-    line-height: 29px;
+    width: 82px;
+    height: 17px;
   }
 }
 
 @media (max-width: 767px) {
   .logo {
-    font-size: 20px;
-    line-height: 24px;
+    width: 69px;
+    height: 24px;
+  }
+
+  .logo--footer {
+    margin-top: 0;
+    width: 68px;
+    height: 15px;
   }
 }
-
