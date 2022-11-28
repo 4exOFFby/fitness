@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {trainersSwiper} from './modules/slider';
 import {feedbackSwiper} from './modules/carousel';
+import {showProductCardContent} from './modules/product-card-open';
 
 // ---------------------------------
 
@@ -15,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   trainersSwiper.init();
   feedbackSwiper.init();
+  showProductCardContent();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
