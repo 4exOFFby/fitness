@@ -18,6 +18,24 @@ window.addEventListener('DOMContentLoaded', () => {
   feedbackSwiper.init();
   showProductCardContent();
 
+  const buttons = document.querySelectorAll('.tub-button-list__button');
+  const tabLists = document.querySelectorAll('.tub-list');
+
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      for (button of buttons) {
+        button.classList.remove('btn--tub-active');
+      }
+      for (let tabList of tabLists) {
+        tabList.classList.remove('tub-list--active');
+      }
+      buttons[index].classList.add('btn--tub-active');
+      tabLists[index].classList.add('tub-list--active');
+    });
+  });
+
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

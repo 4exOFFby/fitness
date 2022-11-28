@@ -38,12 +38,20 @@
 @media (max-width: 1199px) {
   .subscribers {
     padding: 100px 0;
+
+    .subscribers__container {
+      padding: 0 163px;
+    }
   }
 }
 
 @media (max-width: 767px) {
   .subscribers {
     padding: 70px 0;
+
+    .subscribers__container {
+      padding: 0 15px;
+    }
   }
 
   .subscribers::before {
