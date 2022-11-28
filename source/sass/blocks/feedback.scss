@@ -13,6 +13,15 @@
     margin: 0;
     margin-bottom: 37px;
   }
+
+  .feedback__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 347px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -28,6 +37,11 @@
     h2 {
       font-size: 42px;
       line-height: 50px;
+    }
+
+    .feedback__container {
+      padding: 0 45px;
+      position: relative;
     }
   }
 }

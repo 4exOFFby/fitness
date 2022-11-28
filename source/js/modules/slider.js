@@ -1,7 +1,7 @@
 import Swiper, {Navigation} from 'swiper';
 const slides = document.querySelectorAll('.product-card');
 
-const swiper = new Swiper('.swiper', {
+const trainersSwiper = new Swiper('.trainers__slider', {
   direction: 'horizontal',
   effect: 'slide',
   speed: 400,
@@ -41,4 +41,4 @@ for (let slide of slides) {
 }
 
 
-export {swiper};
+export {trainersSwiper};
