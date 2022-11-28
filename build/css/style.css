@@ -2542,11 +2542,26 @@ button,
   color: #102654;
   margin: 0;
   margin-bottom: 48px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .trainers .trainers__container {
   padding: 0 103px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 1;
 }
 
@@ -2554,6 +2569,7 @@ button,
   position: initial;
   width: 100%;
   max-width: 1160px;
+  overflow-x: hidden;
 }
 
 .trainers__slider-list {
@@ -2572,6 +2588,11 @@ button,
   border: none;
   z-index: 5;
   color: #afafaf;
+  cursor: pointer;
+}
+
+.trainers__slider-button:hover {
+  opacity: 0.6;
 }
 
 .trainers__slider-button--prev {
@@ -2927,8 +2948,29 @@ button,
   margin-bottom: 37px;
 }
 
-.feedback-carousel {
+.feedback .feedback__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
+  padding: 0 347px;
+}
+
+.feedback-carousel {
+  position: initial;
+  width: 90%;
+  max-width: 560px;
+  overflow-x: hidden;
 }
 
 .feedback-carousel .feedback-carousel__list {
@@ -2938,29 +2980,31 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  width: 90%;
+  height: auto;
+  max-width: 560px;
 }
 
 .feedback-carousel .feedback-carousel__button {
   position: absolute;
-  top: 43%;
+  top: 56%;
   background-color: transparent;
   border: none;
 }
 
 .feedback-carousel .feedback-carousel__button--prev {
-  left: -66px;
+  left: 320px;
 }
 
 .feedback-carousel .feedback-carousel__button--next {
-  right: -66px;
+  right: 320px;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .feedback-carousel__item {
-  width: 100%;
+  height: auto;
   background: #1c3374;
   -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
@@ -2969,6 +3013,10 @@ button,
   display: grid;
   -ms-grid-columns: 80px 1fr;
   grid-template-columns: 80px 1fr;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content;
+  -ms-grid-rows: min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
@@ -2979,6 +3027,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  align-self: flex-start;
 }
 
 .feedback-carousel__item blockquote {
@@ -3795,6 +3844,9 @@ button,
     line-height: 50px;
     text-align: center;
     margin-bottom: 31px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .trainers .trainers__container {
@@ -3936,26 +3988,31 @@ button,
     line-height: 50px;
   }
 
+  .feedback .feedback__container {
+    padding: 0 45px;
+    position: relative;
+  }
+
+  .feedback-carousel {
+    width: 90%;
+    max-width: 1109px;
+  }
+
   .feedback-carousel .feedback-carousel__button {
     padding: 0;
+    top: 58%;
+  }
+
+  .feedback-carousel .feedback-carousel__item {
+    width: 74vw;
   }
 
   .feedback-carousel .feedback-carousel__button--prev {
-    left: -34px;
+    left: 44px;
   }
 
   .feedback-carousel .feedback-carousel__button--next {
-    right: -34px;
-  }
-
-  .feedback-carousel .feedback-carousel__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    right: 44px;
   }
 
   .free-lesson {
@@ -4347,6 +4404,7 @@ button,
   .product-card__contant-wrapper {
     width: 100%;
     height: 100%;
+    padding-top: 50px;
   }
 
   .product-card__image-wrapper {
@@ -4385,6 +4443,10 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+
+  .trainers__slider-button {
+    top: 60%;
   }
 
   .trainers__slider-button svg {
@@ -4538,25 +4600,19 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 98%;
   }
 
   .feedback-carousel .feedback-carousel__button--prev {
-    left: 0;
+    left: 15px;
   }
 
   .feedback-carousel .feedback-carousel__button--next {
-    right: 0;
-  }
-
-  .feedback-carousel .feedback-carousel__list {
-    width: 80%;
+    right: 15px;
   }
 
   .feedback-carousel .feedback-carousel__item {
@@ -4567,6 +4623,7 @@ button,
     -moz-column-gap: 15px;
     column-gap: 15px;
     row-gap: 16px;
+    width: 98%;
   }
 
   .feedback-carousel .feedback-carousel__item cite {

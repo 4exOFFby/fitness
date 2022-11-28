@@ -11,11 +11,16 @@
     color: #102654;
     margin: 0;
     margin-bottom: 48px;
+    align-self: flex-start;
   }
 
   .trainers__container {
     padding: 0 103px;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     z-index: 1;
   }
 }
@@ -24,6 +29,7 @@
   position: initial;
   width: 100%;
   max-width: 1160px;
+  overflow-x: hidden;
 }
 
 .trainers__slider-list {
@@ -41,6 +47,11 @@
   border: none;
   z-index: 5;
   color: #afafaf;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .trainers__slider-button--prev {
@@ -67,6 +78,7 @@
       line-height: 50px;
       text-align: center;
       margin-bottom: 31px;
+      align-self: center;
     }
 
     .trainers__container {
@@ -127,6 +139,8 @@
   }
 
   .trainers__slider-button {
+    top: 60%;
+
     svg {
       width: 10px;
       height: 19px;
