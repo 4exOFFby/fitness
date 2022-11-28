@@ -1,5 +1,4 @@
 import Swiper, {Navigation} from 'swiper';
-const slides = document.querySelectorAll('.product-card');
 
 const trainersSwiper = new Swiper('.trainers__slider', {
   direction: 'horizontal',
@@ -33,12 +32,5 @@ const trainersSwiper = new Swiper('.trainers__slider', {
     prevEl: '.trainers__slider-button--prev',
   },
 });
-
-for (let slide of slides) {
-  slide.addEventListener('click', () => {
-    slide.classList.toggle('product-card--touch');
-  });
-}
-
 
 export {trainersSwiper};
