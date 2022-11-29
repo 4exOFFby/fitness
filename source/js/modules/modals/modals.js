@@ -107,14 +107,18 @@ export class Modals {
 
   _addListeners(modal) {
     const iframe = document.querySelector('iframe');
-    iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&amp';
+    if (iframe) {
+      iframe.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&amp';
+    }
     modal.addEventListener('click', this._modalClickHandler);
     document.addEventListener('keydown', this._documentKeydownHandler);
   }
 
   _removeListeners(modal) {
     const iframe = document.querySelector('iframe');
-    iframe.src = '';
+    if (iframe) {
+      iframe.src = '';
+    }
     modal.removeEventListener('click', this._modalClickHandler);
     document.removeEventListener('keydown', this._documentKeydownHandler);
   }

@@ -2343,10 +2343,11 @@ button,
 }
 
 .promo img {
-  width: 55%;
+  width: 100%;
+  height: 100%;
   min-width: 400px;
   max-width: 660px;
-  min-height: 400px;
+  min-height: 432px;
 }
 
 .promo__container {
@@ -2356,9 +2357,9 @@ button,
 }
 
 .promo__text-wrapper {
-  width: 45%;
+  width: 60%;
   max-width: 520px;
-  min-width: 350px;
+  min-width: 320px;
   min-height: 400px;
   padding: 87px 79px 87px 78px;
   background-color: #ed0233;
@@ -2525,12 +2526,12 @@ button,
   overflow-x: hidden;
 }
 
-.product-card__image-small {
+.product-card__image-wrapper--small img {
   scale: 1.09;
-  -o-object-fit: none;
-  object-fit: none;
   -o-object-position: center -24px;
   object-position: center -24px;
+  -o-object-fit: none;
+  object-fit: none;
 }
 
 .trainers {
@@ -2820,18 +2821,40 @@ button,
   text-align: center;
 }
 
+.stocks__lists-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .stocks__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
-  row-gap: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 45%;
+}
+
+.stocks__list-special {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 49%;
 }
 
 .stocks__list-link {
@@ -2839,13 +2862,13 @@ button,
 }
 
 .stocks__list-item {
-  max-width: 560px;
+  width: 100%;
   min-height: 211px;
   border: 7px solid transparent;
   -o-border-image: -o-linear-gradient(329.11deg, #ed0233 25.38%, #003eb7 74.89%);
   border-image: linear-gradient(120.89deg, #ed0233 25.38%, #003eb7 74.89%);
   border-image-slice: 1;
-  padding: 35px;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2866,6 +2889,7 @@ button,
   line-height: 30px;
   color: #1c3374;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .stocks__list-item p {
@@ -2875,6 +2899,11 @@ button,
   font-size: 16px;
   line-height: 22px;
   color: #1c3374;
+  margin: 0;
+}
+
+.stocks__list-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .stocks-special {
@@ -2885,20 +2914,22 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  max-width: 560px;
-  min-height: 462px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   border: none;
   padding: 0;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
 }
 
 .stocks-special img {
-  width: 50%;
-  height: 100%;
+  width: 280px;
+  height: 462px;
   max-width: 280px;
-  min-height: 462px;
+}
+
+.stocks-special picture {
+  width: 280px;
+  height: 462px;
 }
 
 .stocks-special__text-wrapper {
@@ -2914,7 +2945,7 @@ button,
   align-items: flex-start;
   width: 50%;
   height: 100%;
-  max-width: 280px;
+  min-width: 200px;
   min-height: 462px;
   padding: 45px 35px;
   background-color: #ed0233;
@@ -3038,6 +3069,12 @@ button,
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
+}
+
+.feedback-carousel__item picture {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
 }
 
 .feedback-carousel__item img {
@@ -3751,8 +3788,8 @@ button,
   }
 
   .promo img {
-    width: 55%;
-    min-height: 292px;
+    width: 100%;
+    min-height: 321px;
     min-width: 290px;
   }
 
@@ -3841,7 +3878,7 @@ button,
     height: 100%;
   }
 
-  .product-card__image-small {
+  .product-card__image-wrapper--small img {
     scale: 1.3;
     -o-object-fit: cover;
     object-fit: cover;
@@ -3973,11 +4010,44 @@ button,
     line-height: 50px;
   }
 
+  .stocks__list-special {
+    width: 100%;
+  }
+
+  .stocks__list-special:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .stocks__list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .stocks__lists-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .stocks__list {
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-    row-gap: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .stocks__list-item {
+    width: 47%;
   }
 
   .stocks-special {
@@ -3987,18 +4057,28 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
+    justify-self: flex-start;
     width: 100%;
-    max-width: 100%;
   }
 
   .stocks-special img {
-    width: 60%;
-    max-width: 100%;
+    width: 399px;
+    height: 462px;
+    max-width: 399px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center -10px;
+    object-position: center -10px;
+  }
+
+  .stocks-special picture {
+    width: 399px;
+    height: 462px;
   }
 
   .stocks-special__text-wrapper {
     min-width: 279px;
-    max-width: 40%;
+    width: 60%;
   }
 
   .feedback {
@@ -4563,13 +4643,23 @@ button,
     line-height: 38px;
   }
 
+  .stocks__lists-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .stocks__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    row-gap: 30px;
+    width: 100%;
+  }
+
+  .stocks__list-special {
+    width: 100%;
   }
 
   .stocks__list-item {
+    width: 100%;
     max-width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -4598,8 +4688,18 @@ button,
   }
 
   .stocks-special img {
+    width: 100%;
+    height: 100%;
     min-height: 299px;
-    width: 100vw;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center -10px;
+    object-position: center -10px;
+  }
+
+  .stocks-special picture {
+    width: 100%;
     height: 91vw;
   }
 
