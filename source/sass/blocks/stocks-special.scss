@@ -1,19 +1,18 @@
 .stocks-special {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   border: none;
   padding: 0;
 
   img {
     width: 280px;
-    height: 462px;
+    height: 100%;
     max-width: 280px;
   }
 
   picture {
     width: 280px;
-    height: 462px;
   }
 }
 
@@ -60,36 +59,34 @@
 
 @media (max-width: 1199px) {
   .stocks-special {
-    grid-row: 1/2;
-    grid-column: 1/3;
-    justify-self: flex-start;
+    align-items: stretch;
+    justify-content: stretch;
     width: 100%;
 
     img {
       width: 399px;
-      height: 462px;
+      height: 100%;
+      min-height: 462px;
       max-width: 399px;
-      object-fit: cover;
-      object-position: center -10px;
+      object-position: center 0;
+      aspect-ratio: 1/1;
     }
 
     picture {
       width: 399px;
-      height: 462px;
+      max-width: 399px;
     }
   }
 
   .stocks-special__text-wrapper {
     min-width: 279px;
-    width: 60%;
+    width: 61%;
   }
 }
 
 @media (max-width: 767px) {
   .stocks-special {
     flex-direction: column;
-    grid-column: 1/2;
-    grid-row: 1/2;
     min-height: 598px;
 
     img {
@@ -97,12 +94,13 @@
       height: 100%;
       min-height: 299px;
       max-width: 100%;
-      object-fit: cover;
-      object-position: center -10px;
+      object-fit: initial;
+      object-position: center 0;
     }
 
     picture {
       width: 100%;
+      max-width: 100%;
       height: 91vw;
     }
 

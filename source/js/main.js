@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {trainersSwiper} from './modules/slider';
 import {feedbackSwiper} from './modules/carousel';
 import {showProductCardContent} from './modules/product-card-open';
+import {subscriberTubHandler} from './modules/subscriber-tab';
 
 // ---------------------------------
 
@@ -17,24 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   trainersSwiper.init();
   feedbackSwiper.init();
   showProductCardContent();
-
-  const buttons = document.querySelectorAll('.tub-button-list__button');
-  const tabLists = document.querySelectorAll('.tub-list');
-
-
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      for (button of buttons) {
-        button.classList.remove('btn--tub-active');
-      }
-      for (let tabList of tabLists) {
-        tabList.classList.remove('tub-list--active');
-      }
-      buttons[index].classList.add('btn--tub-active');
-      tabLists[index].classList.add('tub-list--active');
-    });
-  });
-
+  subscriberTubHandler();
 
   // ---------------------------------
 

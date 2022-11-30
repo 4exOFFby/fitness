@@ -17,10 +17,11 @@
 
 .stocks__lists-container {
   display: flex;
-  align-items: flex-start;
+  align-items: initial;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  gap: 40px;
 }
 
 .stocks__list {
@@ -115,7 +116,6 @@
 
   .stocks__list {
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;

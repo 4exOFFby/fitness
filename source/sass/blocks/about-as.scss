@@ -72,6 +72,9 @@
   z-index: 0;
   width: 364px;
   height: 228px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-as__video-mask::before {
@@ -90,7 +93,7 @@
   height: 71px;
   position: absolute;
   top: 30%;
-  left: 37%;
+  left: 41%;
   border-radius: 50%;
   background-image: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   background-position: 55%;
@@ -102,6 +105,7 @@
   justify-content: center;
   padding: 0;
   cursor: pointer;
+  transition: 0.2s;
 
   svg {
     color: #ffffff;

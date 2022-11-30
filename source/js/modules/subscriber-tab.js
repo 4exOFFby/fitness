@@ -1,12 +1,22 @@
-// const buttons = document.querySelectorAll('.tub-button-list__button');
-// const tabLists = document.querySelectorAll('.tub-list');
-
-// console.log(buttons);
+const buttons = document.querySelectorAll('.tub-button-list__button');
+const tabLists = document.querySelectorAll('.tub-list');
 
 
-// buttons.map((button, index) => {
-//   button.addEventListener('click', () => {
-//     console.log(button);
-//     tabLists[index].classList.remove('tub-list--active');
-//   });
-// });
+const subscriberTubHandler = () => {
+  if (buttons.length > 0 || tabLists.length > 0) {
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        for (button of buttons) {
+          button.classList.remove('btn--tub-active');
+        }
+        for (let tabList of tabLists) {
+          tabList.classList.remove('tub-list--active');
+        }
+        buttons[index].classList.add('btn--tub-active');
+        tabLists[index].classList.add('tub-list--active');
+      });
+    });
+  }
+};
+
+export {subscriberTubHandler};
