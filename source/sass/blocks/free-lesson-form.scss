@@ -67,6 +67,7 @@
   .free-lesson-form {
     input {
       width: 100%;
+      padding: 10px 10px 6px 0;
     }
 
     input:not(:last-child) {
@@ -74,7 +75,12 @@
     }
 
     input:not(:first-of-type) {
-      margin-top: 30px;
+      margin-top: 27px;
+    }
+
+    button {
+      margin-top: 39px;
+      min-height: 53px;
     }
   }
 

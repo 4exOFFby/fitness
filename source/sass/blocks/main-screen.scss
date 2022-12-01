@@ -54,6 +54,7 @@
     margin-bottom: 80px;
     grid-column: 2/3;
     grid-row: 2/3;
+    text-transform: initial;
   }
 
   img {
@@ -117,8 +118,8 @@
 
 @media (max-width: 767px) {
   .main-screen {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 53px;
+    padding-bottom: 79px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,15 +132,20 @@
       font-size: 28px;
       line-height: 34px;
       margin-bottom: 20px;
+      margin-right: 3px;
     }
 
     span {
       margin-right: -16px;
+      margin-top: 15px;
     }
 
     h2 {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 23px;
+      font-size: 72px;
+      margin-top: -7px;
+      font-weight: 600;
     }
   }
 
@@ -153,6 +159,7 @@
   .main-screen__link {
     width: 100%;
     max-width: 767px;
+    min-height: 61px;
     grid-column: 1/3;
   }
 }

@@ -11,6 +11,26 @@
 
 @media (max-width: 767px) {
   .tub-button-list {
+    position: relative;
     width: 290px;
+    margin-bottom: 35px;
+  }
+
+  .tub-button-list::before {
+    position: absolute;
+    content: "";
+    width: 99%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  .tub-button-list__item:not(:last-child) {
+    margin-right: 38px;
+
+    button {
+      padding-right: 7px;
+    }
   }
 }

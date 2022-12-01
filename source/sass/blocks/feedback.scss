@@ -48,11 +48,13 @@
 
 @media (max-width: 767px) {
   .feedback {
-    padding-bottom: 70px;
+    padding-bottom: 70.5px;
 
     h2 {
       font-size: 32px;
       line-height: 38px;
+      transform: translateX(-1px);
+      margin-bottom: 42px;
     }
   }
 }

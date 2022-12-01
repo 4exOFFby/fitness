@@ -59,10 +59,6 @@
   width: 50vw;
   height: 401px;
   z-index: 0;
-
-  iframe {
-    border: none;
-  }
 }
 
 .about-as__video-wrapper {
@@ -75,17 +71,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../img/jpg/about-as-video-demo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.about-as__video-mask::before {
-  content: "";
-  width: 100%;
-  height: 98%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../img/jpg/about-as-video-demo.jpg");
-  z-index: 10;
+@media (min-resolution: 2dppx) {
+  .about-as__video-wrapper {
+    background-image: url("../img/jpg/about-as-video-demo-retina.jpg");
+  }
 }
 
 .about-as__play-button {
@@ -214,21 +208,22 @@
 
 @media (max-width: 767px) {
   .about-as {
-    padding: 70px 0 290px 0;
+    padding: 63px 0 71px 0;
 
     h2 {
       font-size: 32px;
       line-height: 38px;
-      margin-bottom: 20px;
+      margin-bottom: 6px;
       align-self: flex-start;
       text-align: start;
       margin-left: 15px;
+      letter-spacing: 0.03em;
     }
 
     b {
       font-size: 18px;
       line-height: 150%;
-      margin-bottom: 40px;
+      margin-bottom: 23px;
       align-self: flex-start;
       text-align: start;
       margin-left: 15px;
@@ -237,13 +232,25 @@
     p {
       font-size: 16px;
       line-height: 150%;
-      margin-bottom: 40px;
+      margin-bottom: 34px;
       width: 80%;
       min-width: 258px;
       align-self: flex-start;
       text-align: start;
       margin-left: 15px;
     }
+
+    img {
+      object-position: -235px center;
+    }
+  }
+
+  .about-as__play-button::before {
+    width: 72px;
+    height: 72px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .about-as__video-wrapper {
@@ -251,12 +258,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 50vw;
-
-    iframe {
-      width: 100vw;
-      height: 48vw;
-    }
+    height: 52vw;
   }
 
   .about-as__container {
@@ -265,18 +267,29 @@
   }
 
   .about-as__play-button {
-    left: 39%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+
+    svg {
+      width: 10px;
+      height: 10px;
+      margin-top: 3px;
+      margin-left: 3px;
+    }
   }
 
   .about-as__image-wrapper {
-    width: 100vw;
-    height: 98vw;
     position: initial;
+    width: 100%;
+    height: auto;
 
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 98vw;
       margin-bottom: 40px;
     }
   }
