@@ -31,6 +31,13 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .footer-navigation {
+    margin-top: 3px;
+    transform: translateX(-14px);
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer-navigation {
     padding-left: 27px;

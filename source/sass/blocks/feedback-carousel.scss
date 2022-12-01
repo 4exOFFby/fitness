@@ -74,6 +74,35 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .feedback-carousel {
+    .feedback-carousel__button {
+      top: 57%;
+    }
+
+    .feedback-carousel__button--prev {
+      left: 326px;
+    }
+
+    .feedback-carousel__button--next {
+      right: 326px;
+    }
+  }
+
+  .feedback-carousel__item {
+    min-height: 242px;
+    padding: 55px 59px 50px 62px;
+
+    img {
+      margin-top: 6px;
+    }
+
+    cite {
+      margin-bottom: 11px;
+    }
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .feedback-carousel {
     width: 83.5%;

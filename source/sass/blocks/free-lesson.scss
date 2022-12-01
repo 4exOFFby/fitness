@@ -21,13 +21,19 @@
 @media (min-width: 1200px) {
   .free-lesson {
     grid-column: 1/2;
+    padding-bottom: 62px;
+
+    h2 {
+      transform: translateX(-7px);
+      line-height: 81px;
+    }
 
     .free-lesson__container {
       max-width: 84%;
       width: 580px;
       margin: 0;
       margin-left: auto;
-      padding: 0 170px 0 0;
+      padding: 0 165px 0 0;
     }
   }
 }

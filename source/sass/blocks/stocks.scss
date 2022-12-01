@@ -84,7 +84,46 @@
 
 @media (min-width: 1200px) {
   .stocks {
+    padding: 147px 0 117px 0;
     grid-column: 1/3;
+  }
+
+  .stocks__lists-container {
+    gap: 0;
+  }
+
+  .stocks__list {
+    width: 48%;
+  }
+
+  .stocks__list-item {
+    padding-bottom: 28px;
+
+    br {
+      display: none;
+    }
+
+    h3 {
+      margin-bottom: 7px;
+    }
+  }
+
+  .stocks__list-link {
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
+
+  .stocks__list-item--special {
+    padding: 0;
+
+    .stocks__list-link {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+    }
   }
 }
 

@@ -27,6 +27,10 @@
 @media (min-width: 1200px) {
   .feedback {
     grid-column: 1/3;
+
+    h2 {
+      transform: translateX(3px);
+    }
   }
 }
 

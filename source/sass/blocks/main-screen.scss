@@ -116,6 +116,52 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .main-screen {
+    padding-bottom: 50px;
+
+    h2 {
+      line-height: 110px;
+      margin-bottom: 0;
+      align-self: flex-start;
+      text-align: end;
+      font-size: 92px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      display: inline-block;
+      vertical-align: middle;
+      width: 260px;
+      margin-right: 4px;
+    }
+
+    b {
+      line-height: 48px;
+      margin-right: 5px;
+      margin-bottom: 6px;
+      align-self: flex-start;
+    }
+
+    span {
+      margin-top: 89px;
+      margin-left: -3px;
+    }
+  }
+
+  .main-screen__wrapper {
+    margin-top: 33px;
+    margin-right: 55px;
+    row-gap: 16px;
+  }
+
+  .main-screen__link {
+    margin-top: 34px;
+    margin-right: 8px;
+    width: 235px;
+    min-height: 58px;
+    padding-top: 14px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .main-screen {
     padding-bottom: 80px;
