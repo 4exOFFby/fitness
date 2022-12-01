@@ -36,7 +36,7 @@
 
 @media (max-width: 767px) {
   .features {
-    padding: 70px 0 70px 0;
+    padding: 65px 0 34px 0;
 
     .features__container {
       padding: 0;
@@ -45,7 +45,8 @@
     h2 {
       font-size: 32px;
       line-height: 38px;
-      margin-bottom: 60px;
+      transform: translateX(-7px);
+      margin-bottom: 48px;
     }
   }
 }

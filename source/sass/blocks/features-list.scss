@@ -172,10 +172,24 @@
   .features-list__item {
     flex-direction: column;
     align-items: center;
+    padding: 0 20px 30px 20px;
 
     p {
       text-align: center;
     }
+
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 2px;
+    }
+  }
+
+  .features-list__item--2 {
+    padding-bottom: 34px;
+  }
+
+  .features-list__item--4 {
+    padding-top: 36px;
   }
 
   .features-list__text-wrapper {
@@ -191,5 +205,24 @@
   .features-list__item--special {
     width: 100%;
     max-width: none;
+    padding: 40px 21px 43px 19px;
+
+    b {
+      font-size: 74px;
+      line-height: 90%;
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 150%;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    p {
+      display: inline-block;
+      vertical-align: middle;
+      width: 60%;
+    }
   }
 }

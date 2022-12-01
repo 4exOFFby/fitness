@@ -47,7 +47,17 @@
 
 @media (max-width: 767px) {
   .subscribers {
-    padding: 70px 0;
+    padding: 63px 0 70px 0;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: 0.03em;
+      display: block;
+      width: 147px;
+      margin: 0 auto;
+      transform: translateX(-3%);
+    }
 
     .subscribers__container {
       padding: 0 15px;

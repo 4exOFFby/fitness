@@ -56,8 +56,7 @@
   display: flex;
   align-items: center;
   color: rgba(16, 38, 84, 0.5);
-  padding: 20px;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  padding: 20px 0 15px 0;
 
   @media (max-width: 767px) {
     font-size: 16px;
@@ -66,9 +65,20 @@
 }
 
 .btn--tub-active {
+  position: relative;
   color: #102654;
-  border-bottom: 2px solid #d10a42;
+  // border-bottom: 2px solid #d10a42;
   cursor: auto;
+}
+
+.btn--tub-active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #d10a42;
 }
 
 .btn--by-subscriber {
@@ -86,7 +96,6 @@
   border: 2px solid #102654;
   width: 206px;
   min-height: 64px;
-  margin-top: auto;
 
   @media (max-width: 767px) {
     width: 100%;
@@ -111,6 +120,11 @@
     width: 202px;
     min-height: 39px;
   }
+
+  @media (max-width: 767px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 .btn--stocks {
@@ -125,6 +139,11 @@
   padding: 0;
   color: #1c3374;
   border-bottom: 1px solid #1c3374;
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .btn--stocks-cpecial {
