@@ -32,6 +32,20 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .free-lesson {
+    padding: 62px 0 70px;
+
+    h2 {
+      margin-bottom: 28px;
+    }
+
+    .free-lesson__container {
+      padding: 0 162px 0 132px;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .free-lesson {
     padding: 70px 0;

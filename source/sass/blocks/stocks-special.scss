@@ -57,6 +57,21 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .stocks-special__text-wrapper {
+    padding: 34px 35px 45px 45px;
+
+    span {
+      line-height: 43px;
+    }
+
+    b {
+      line-height: 61px;
+      margin-bottom: 23px;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .stocks-special {
     align-items: stretch;

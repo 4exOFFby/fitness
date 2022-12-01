@@ -9,6 +9,32 @@
   margin-bottom: 39px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tub-button-list {
+    position: relative;
+    padding: 0 4px 0 3px;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+
+  .tub-button-list::before {
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 2px;
+    bottom: 0;
+    left: 3;
+    background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  .tub-button-list__button {
+    padding-top: 0;
+    padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
 @media (max-width: 767px) {
   .tub-button-list {
     position: relative;
