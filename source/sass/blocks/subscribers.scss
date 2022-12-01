@@ -25,13 +25,39 @@
   bottom: -54px;
   right: 0;
   background-image: url("../img/png/subscription.png");
+  background-size: 350px 402px;
   background-repeat: no-repeat;
   z-index: 1;
+
+  @media (min-resolution: 2dppx) {
+    .subscribers::before {
+      background-image: url("../img/png/subscription-retina.png");
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   .subscribers {
     grid-column: 1/3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .subscribers {
+    h2 {
+      font-size: 42px;
+      line-height: 50px;
+      letter-spacing: 0.03em;
+      transform: translateX(-5px);
+      margin-bottom: 21.5px;
+    }
+  }
+
+  .subscribers::before {
+    bottom: -71px;
+    right: 0;
+    width: 289px;
+    height: 345px;
   }
 }
 

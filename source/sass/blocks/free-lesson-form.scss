@@ -55,6 +55,15 @@
   justify-content: space-between;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .free-lesson-form {
+    input {
+      padding-bottom: 5px;
+      width: 43.5%;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .free-lesson-form {
     input {

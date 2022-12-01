@@ -76,6 +76,40 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .trainers {
+    padding-top: 2px;
+
+    h2 {
+      transform: translateX(-3px);
+    }
+
+    .trainers__slider-item.trainers__slider-item--touch {
+      h3 {
+        position: initial;
+        transform: translateX(-3px);
+      }
+    }
+
+    .trainers__slider-button {
+      top: 56.5%;
+
+      svg {
+        width: 16px;
+        height: 32px;
+      }
+    }
+
+    .trainers__slider-button--prev {
+      left: 45px;
+    }
+
+    .trainers__slider-button--next {
+      right: 43px;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .trainers {
     padding-bottom: 100px;
