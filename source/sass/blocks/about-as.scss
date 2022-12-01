@@ -137,6 +137,41 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .about-as {
+    padding: 120px 0 236px;
+
+    h2 {
+      margin-top: 39px;
+      margin-bottom: 8px;
+      letter-spacing: 0.03em;
+    }
+
+    b {
+      margin-bottom: 38px;
+    }
+
+    .about-as__container {
+      padding: 0 102px 0 163px;
+      align-items: flex-start;
+    }
+  }
+
+  .about-as__text-wrapper {
+    margin-right: 84px;
+  }
+
+  .about-as__video-wrapper {
+    left: -61px;
+  }
+
+  .about-as__play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .about-as {
     padding: 102px 0 144px;

@@ -18,7 +18,17 @@
 
 @media (min-width: 1200px) {
   .features {
+    padding: 144px 0 74px;
     grid-column: 1/3;
+
+    .features__container {
+      padding: 0 162px 0 165px;
+    }
+
+    h2 {
+      transform: translateX(8px);
+      margin-bottom: 39px;
+    }
   }
 }
 

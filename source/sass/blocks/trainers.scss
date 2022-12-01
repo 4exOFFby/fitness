@@ -72,7 +72,24 @@
 
 @media (min-width: 1200px) {
   .trainers {
+    padding-bottom: 92px;
     grid-column: 1/3;
+
+    h2 {
+      margin-bottom: 51px;
+    }
+  }
+
+  .trainers__slider-button {
+    top: 60%;
+  }
+
+  .trainers__slider-button--prev {
+    left: 45px;
+  }
+
+  .trainers__slider-button--next {
+    right: 43px;
   }
 }
 

@@ -31,6 +31,16 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .footer-social {
+    margin-top: 0;
+  }
+
+  .footer-social__item {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 1199px) {
   .footer-social {
     margin-top: 0;
