@@ -150,6 +150,10 @@
     flex-direction: row;
     width: 98%;
 
+    .feedback-carousel__list {
+      width: 100%;
+    }
+
     .feedback-carousel__button--prev {
       left: 15px;
     }
