@@ -2954,6 +2954,10 @@ button,
   width: 280px;
   height: 100%;
   max-width: 280px;
+  -o-object-fit: none;
+  object-fit: none;
+  -o-object-position: -43px -206px;
+  object-position: -43px -206px;
 }
 
 .stocks-special picture {
@@ -4584,9 +4588,11 @@ button,
     height: 100%;
     min-height: 462px;
     max-width: 399px;
-    -o-object-position: center 0;
-    object-position: center 0;
-    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0 -176px;
+    object-position: 0 -176px;
+    aspect-ratio: 399/462;
   }
 
   .stocks-special picture {
@@ -5441,10 +5447,10 @@ button,
     height: 100%;
     min-height: 299px;
     max-width: 100%;
-    -o-object-fit: initial;
-    object-fit: initial;
-    -o-object-position: center 0;
-    object-position: center 0;
+    -o-object-position: center 75%;
+    object-position: center 75%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .stocks-special span {
