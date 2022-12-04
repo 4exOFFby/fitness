@@ -60,6 +60,18 @@
 }
 
 @media (min-width: 1200px) {
+  .stocks-special {
+    img {
+      object-position: 20px -53px;
+      object-fit: cover;
+      scale: 1.5;
+    }
+
+    picture {
+      overflow: hidden;
+    }
+  }
+
   .stocks-special__text-wrapper {
     padding: 35px 40px 46px 44px;
     width: 49%;
