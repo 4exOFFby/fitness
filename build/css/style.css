@@ -3901,6 +3901,18 @@ button,
     letter-spacing: 0.05em;
   }
 
+  .stocks-special img {
+    -o-object-position: 20px -53px;
+    object-position: 20px -53px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    scale: 1.5;
+  }
+
+  .stocks-special picture {
+    overflow: hidden;
+  }
+
   .stocks-special__text-wrapper {
     padding: 35px 40px 46px 44px;
     width: 49%;
