@@ -2951,13 +2951,13 @@ button,
 }
 
 .stocks-special img {
+  -o-object-position: 35% 40%;
+  object-position: 35% 40%;
+  -o-object-fit: cover;
+  object-fit: cover;
   width: 280px;
   height: 100%;
   max-width: 280px;
-  -o-object-fit: none;
-  object-fit: none;
-  -o-object-position: -43px -206px;
-  object-position: -43px -206px;
 }
 
 .stocks-special picture {
@@ -4584,10 +4584,10 @@ button,
   }
 
   .stocks-special img {
+    -o-object-position: center 90%;
+    object-position: center 90%;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 0 -176px;
-    object-position: 0 -176px;
     width: 399px;
     height: 100%;
     min-height: 462px;
@@ -6153,6 +6153,7 @@ button,
 
   .stocks-special img {
     height: 100%;
+    max-height: 100%;
   }
 
   .stocks-special__text-wrapper {
