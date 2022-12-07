@@ -3617,9 +3617,13 @@ button,
 
   .tub-button-list {
     position: relative;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .tub-button-list__item:not(:last-child) {
+    margin-right: 46px;
   }
 
   .tub-button-list__button {
@@ -5914,10 +5918,14 @@ button,
   .tub-button-list {
     position: relative;
     padding: 0 4px 0 3px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     margin-bottom: 44px;
+  }
+
+  .tub-button-list__item:not(:last-child) {
+    margin-right: 55px;
   }
 
   .tub-button-list::before {

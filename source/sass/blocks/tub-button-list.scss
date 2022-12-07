@@ -12,7 +12,11 @@
 @media (min-width: 1200px) {
   .tub-button-list {
     position: relative;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .tub-button-list__item:not(:last-child) {
+    margin-right: 46px;
   }
 
   .tub-button-list__button {
@@ -37,8 +41,12 @@
   .tub-button-list {
     position: relative;
     padding: 0 4px 0 3px;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 44px;
+  }
+
+  .tub-button-list__item:not(:last-child) {
+    margin-right: 55px;
   }
 
   .tub-button-list::before {
