@@ -21,11 +21,11 @@
   content: "";
   position: absolute;
   width: 286px;
-  height: 384px;
-  bottom: -54px;
+  height: 404px;
+  bottom: -62px;
   right: 0;
   background-image: url("../img/png/subscription.png");
-  background-size: 350px 402px;
+  background-size: auto 489px;
   background-repeat: no-repeat;
   z-index: 1;
 
@@ -58,10 +58,11 @@
   }
 
   .subscribers::before {
-    bottom: -71px;
+    background-size: auto 440px;
+    bottom: -69px;
     right: 0;
-    width: 289px;
-    height: 345px;
+    width: 344px;
+    height: 386px;
   }
 }
 

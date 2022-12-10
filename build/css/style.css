@@ -2164,11 +2164,11 @@ button,
   content: "";
   position: absolute;
   width: 286px;
-  height: 384px;
-  bottom: -54px;
+  height: 404px;
+  bottom: -62px;
   right: 0;
   background-image: url("../img/png/subscription.png");
-  background-size: 350px 402px;
+  background-size: auto 489px;
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -3564,6 +3564,17 @@ button,
     grid-column: 1/3;
   }
 
+  .about-as img {
+    width: 50vw;
+    max-width: 660px;
+    max-height: 401px;
+    height: 30vw;
+    -o-object-position: center -40px;
+    object-position: center -40px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   .about-as {
     padding: 120px 0 236px;
   }
@@ -3693,6 +3704,8 @@ button,
   .promo img {
     max-width: 660px;
     height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .promo__text-wrapper {
@@ -3749,7 +3762,12 @@ button,
     transform: translateX(10px);
   }
 
-  .product-card:hover h3 {
+  .product-card--duplicate {
+    display: none;
+  }
+
+  .product-card:hover h3,
+  .product-card:focus h3 {
     position: initial;
     margin: 0 auto;
     line-height: 100%;
@@ -3758,11 +3776,13 @@ button,
     transform: translateX(0);
   }
 
-  .product-card:hover p {
+  .product-card:hover p,
+  .product-card:focus p {
     margin-bottom: 35px;
   }
 
-  .product-card:hover .product-card__image-wrapper {
+  .product-card:hover .product-card__image-wrapper,
+  .product-card:focus .product-card__image-wrapper {
     z-index: -1;
   }
 
@@ -3868,6 +3888,14 @@ button,
     grid-column: 1/3;
   }
 
+  .stocks p {
+    margin-bottom: auto;
+  }
+
+  .stocks .stocks__list-link {
+    margin-top: 45px;
+  }
+
   .stocks__lists-container {
     gap: 0;
   }
@@ -3908,14 +3936,15 @@ button,
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
+    margin-top: 45px;
   }
 
   .stocks-special img {
-    -o-object-position: 20px -53px;
-    object-position: 20px -53px;
+    -o-object-position: 22px -57px;
+    object-position: 22px -57px;
     -o-object-fit: cover;
     object-fit: cover;
-    scale: 1.5;
+    scale: 1.45;
   }
 
   .stocks-special picture {
@@ -3948,7 +3977,7 @@ button,
   }
 
   .feedback-carousel .feedback-carousel__button {
-    top: 57%;
+    top: 195px;
   }
 
   .feedback-carousel .feedback-carousel__button--prev {
@@ -4072,7 +4101,7 @@ button,
   }
 
   .main-footer {
-    padding-bottom: 32px;
+    padding-bottom: 24px;
   }
 
   .footer-navigation {
@@ -4087,7 +4116,7 @@ button,
   }
 
   .footer-social__item {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -4557,8 +4586,24 @@ button,
     line-height: 50px;
   }
 
+  .stocks p {
+    margin-bottom: auto;
+  }
+
+  .stocks .stocks__list-link {
+    margin-top: 45px;
+  }
+
   .stocks__list-special {
     width: 100%;
+  }
+
+  .stocks__list-special p {
+    margin-bottom: auto;
+  }
+
+  .stocks__list-special .stocks__list-link {
+    margin-top: 45px;
   }
 
   .stocks__list-special:not(:last-child) {
@@ -4605,25 +4650,26 @@ button,
   }
 
   .stocks-special img {
-    -o-object-position: center 90%;
-    object-position: center 90%;
+    scale: 1.14;
+    -o-object-position: 21px 86%;
+    object-position: 21px 86%;
     -o-object-fit: cover;
     object-fit: cover;
-    width: 399px;
+    width: 100%;
     height: 100%;
     min-height: 462px;
-    max-width: 399px;
     aspect-ratio: 399/462;
   }
 
   .stocks-special picture {
     width: 399px;
-    max-width: 399px;
+    height: 100%;
+    overflow: hidden;
   }
 
   .stocks-special__text-wrapper {
     min-width: 279px;
-    width: 61%;
+    width: 41%;
   }
 
   .feedback {
@@ -4647,7 +4693,7 @@ button,
 
   .feedback-carousel .feedback-carousel__button {
     padding: 0;
-    top: 58%;
+    top: 195px;
   }
 
   .feedback-carousel .feedback-carousel__item {
@@ -4929,8 +4975,8 @@ button,
   }
 
   .about-as img {
-    -o-object-position: -235px center;
-    object-position: -235px center;
+    -o-object-position: -134px -1px;
+    object-position: -134px -1px;
   }
 
   .about-as__play-button::before {
@@ -5147,11 +5193,19 @@ button,
     line-height: 14px;
   }
 
-  .promo img {
-    width: 100%;
-    max-width: 748px;
+  .promo picture {
     height: 91vw;
     min-height: 89vw;
+    max-width: 748px;
+    overflow: hidden;
+  }
+
+  .promo img {
+    width: 100%;
+    height: 100%;
+    scale: 1.05;
+    -o-object-position: -64px 7px;
+    object-position: -64px 7px;
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -5420,6 +5474,10 @@ button,
     padding: 0 15px;
   }
 
+  .stocks .stocks__list-link {
+    margin-top: 25px;
+  }
+
   .stocks__list-item {
     padding: 34px 20px 40px 20px;
     width: 100%;
@@ -5434,6 +5492,7 @@ button,
     display: inline-block;
     vertical-align: middle;
     width: 90%;
+    margin-bottom: auto;
   }
 
   .stocks__list-item h3 {
@@ -5466,8 +5525,17 @@ button,
     width: 100%;
   }
 
+  .stocks__list-special p {
+    margin-bottom: auto;
+  }
+
+  .stocks__list-special .stocks__list-link {
+    margin-top: 0;
+  }
+
   .stocks__list-link {
     padding-bottom: 0;
+    margin-top: 25px;
   }
 
   .stocks-special {
@@ -5491,10 +5559,11 @@ button,
   }
 
   .stocks-special img {
+    -o-object-position: 13px 74%;
+    object-position: 13px 74%;
+    scale: 1.1;
     -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: center 75%;
-    object-position: center 75%;
     width: 100%;
     height: 100%;
     min-height: 299px;
@@ -5508,7 +5577,8 @@ button,
   .stocks-special picture {
     width: 100%;
     max-width: 100%;
-    height: 91vw;
+    height: 93.3vw;
+    overflow: hidden;
   }
 
   .stocks-special p {
@@ -5538,6 +5608,10 @@ button,
     -ms-flex-direction: row;
     flex-direction: row;
     width: 98%;
+  }
+
+  .feedback-carousel .feedback-carousel__button {
+    top: 237px;
   }
 
   .feedback-carousel .feedback-carousel__list {
@@ -5847,6 +5921,10 @@ button,
     padding: 102px 0 144px;
   }
 
+  .about-as .about-as__container {
+    padding: 0 45px 0 45px;
+  }
+
   .about-as h2 {
     -webkit-transform: translateX(-5px);
     -ms-transform: translateX(-5px);
@@ -5866,9 +5944,21 @@ button,
     width: 100%;
   }
 
-  .about-as__image-wrapper img {
+  .about-as__image-wrapper picture {
+    display: block;
     width: 100%;
     height: 45vw;
+    overflow: hidden;
+  }
+
+  .about-as__image-wrapper img {
+    width: 100%;
+    height: 100%;
+    scale: 1.15;
+    -o-object-position: -40px 8px;
+    object-position: -40px 8px;
+    -o-object-fit: fill;
+    object-fit: fill;
   }
 
   .about-as__video-wrapper {
@@ -5918,10 +6008,11 @@ button,
   }
 
   .subscribers::before {
-    bottom: -71px;
+    background-size: auto 440px;
+    bottom: -69px;
     right: 0;
-    width: 289px;
-    height: 345px;
+    width: 344px;
+    height: 386px;
   }
 
   .tub-button-list {
@@ -6007,6 +6098,8 @@ button,
   .promo img {
     width: 386px;
     min-height: 292px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .promo h3 {
@@ -6209,6 +6302,8 @@ button,
   .stocks-special img {
     height: 100%;
     max-height: 100%;
+    width: 100%;
+    max-width: 100%;
   }
 
   .stocks-special__text-wrapper {
