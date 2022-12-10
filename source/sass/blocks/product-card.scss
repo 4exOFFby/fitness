@@ -158,7 +158,12 @@
     transform: translateX(10px);
   }
 
-  .product-card:hover {
+  .product-card--duplicate {
+    display: none;
+  }
+
+  .product-card:hover,
+  .product-card:focus {
     h3 {
       position: initial;
       margin: 0 auto;

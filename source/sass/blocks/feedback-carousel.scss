@@ -77,7 +77,7 @@
 @media (min-width: 1200px) {
   .feedback-carousel {
     .feedback-carousel__button {
-      top: 57%;
+      top: 195px;
     }
 
     .feedback-carousel__button--prev {
@@ -126,7 +126,7 @@
 
     .feedback-carousel__button {
       padding: 0;
-      top: 58%;
+      top: 195px;
     }
 
 
@@ -149,6 +149,10 @@
     display: flex;
     flex-direction: row;
     width: 98%;
+
+    .feedback-carousel__button {
+      top: 237px;
+    }
 
     .feedback-carousel__list {
       width: 100%;

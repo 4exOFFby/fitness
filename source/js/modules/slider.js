@@ -5,7 +5,6 @@ const trainersSwiper = new Swiper('.trainers__slider', {
   effect: 'slide',
   speed: 400,
   loop: true,
-  watchOverflow: true,
 
   breakpoints: {
 
@@ -33,4 +32,12 @@ const trainersSwiper = new Swiper('.trainers__slider', {
   },
 });
 
-export {trainersSwiper};
+const renderSlidesOrder = () => {
+  const duplicateSlides = document.querySelectorAll('.swiper-slide-duplicate');
+  console.log(duplicateSlides);
+  // for (let i = 0; i < duplicateSlides.length; i++) {
+  //   duplicateSlides[i].classList.add('product-card--duplicate');
+  // }
+};
+
+export {trainersSwiper, renderSlidesOrder};

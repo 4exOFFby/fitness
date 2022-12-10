@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {trainersSwiper} from './modules/slider';
+import {trainersSwiper, renderSlidesOrder} from './modules/slider';
 import {feedbackSwiper} from './modules/carousel';
 import {showProductCardContent} from './modules/product-card-open';
 import {subscriberTubHandler} from './modules/subscriber-tab';
@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   trainersSwiper.init();
+  renderSlidesOrder();
   feedbackSwiper.init();
   showProductCardContent();
   subscriberTubHandler();
