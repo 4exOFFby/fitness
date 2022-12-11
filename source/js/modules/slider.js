@@ -34,7 +34,6 @@ const trainersSwiper = new Swiper('.trainers__slider', {
 
 const renderSlidesOrder = () => {
   const duplicateSlides = document.querySelectorAll('.swiper-slide-duplicate .product-card');
-  console.log(duplicateSlides);
   for (let i = 0; i < duplicateSlides.length; i++) {
     duplicateSlides[i].tabIndex = '-1';
   }

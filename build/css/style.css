@@ -4663,7 +4663,6 @@ button,
 
   .stocks-special picture {
     width: 399px;
-    height: 100%;
     overflow: hidden;
   }
 
@@ -5556,6 +5555,10 @@ button,
     align-items: center;
     text-align: center;
     padding: 37px 30px 45px 30px;
+  }
+
+  .stocks-special .stocks__list-link {
+    margin-top: 25px;
   }
 
   .stocks-special img {
