@@ -34,9 +34,9 @@ const trainersSwiper = new Swiper('.trainers__slider', {
 
 const renderSlidesOrder = () => {
   const duplicateSlides = document.querySelectorAll('.swiper-slide-duplicate .product-card');
-  for (let i = 0; i < duplicateSlides.length; i++) {
-    duplicateSlides[i].tabIndex = '-1';
-  }
+  duplicateSlides.forEach((slide) => {
+    slide.removeAttribute('tabindex');
+  });
 };
 
 export {trainersSwiper, renderSlidesOrder};
